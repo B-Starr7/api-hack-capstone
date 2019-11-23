@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .hidden {
+      display: none;
+  }
+
+  #map {
+    width: 500px;
+    height: 400px;
+  }
+  

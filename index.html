@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Event Finder</title>
+    <meta name="description" content="Find events near you!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" 
+        rel="stylesheet">
+  </head>
+  <body>
+        
+        <section class="app-info"> 
+                <header>
+                    <h1>Event Finder</h1>
+                </header>
+                <h2>Find Tickets To A Show Near You!</h2>
+              </section>  
+
+            <form class="js-form">
+                <label for="event-type">Find an Artist or Genre:</label>
+                <input type="text" name="event-type" id="js-event" required>
+                <br>
+                <label for="location">Enter a Location</label>
+                <input type="text" name="location" id="js-location" placeholder="City" required>
+  
+                <input type="submit" value="Find!">
+            </form>
+
+
+    <p id="location"></p>
+    <div id="map"></div>
+    <ul id="events"></ul>
+    <div id="js-error"></div>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaxsSAwL7SBEmyQpqdFT3-I0SAmku9VMA&callback=initMap"
+    async defer></script>
+
+  </body>
+</html>
