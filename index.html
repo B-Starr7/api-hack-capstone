@@ -13,28 +13,38 @@
   </head>
   <body>
         
-        <section class="app-info"> 
+          <section id="upper-page">
+            <div class="layer">     
+            <section class="app-info"> 
                 <header>
                     <h1>Event Finder</h1>
                 </header>
+                
                 <h2>Find Tickets To A Show Near You!</h2>
+                <p id="description">(All Events Listed From Earliest To Latest Showings)</p>
               </section>  
 
             <form class="js-form">
-                <label for="event-type">Find an Artist or Genre:</label>
-                <input type="text" name="event-type" id="js-event" required>
+                <label for="event-type">Pick an Artist or Genre:</label>
                 <br>
-                <label for="location">Enter a Location</label>
-                <input type="text" name="location" id="js-location" placeholder="City" required>
-  
-                <input type="submit" value="Find!">
+                <input type="text" name="event-type" id="js-event" placeholder="Rap Music" required>
+                <br>
+                <label for="location">Choose a City:</label> 
+                <br>
+                <input type="text" name="location" id="js-location" placeholder="Los Angeles" required>
+                <br>
+                <br>
+                <input type="submit" id="submit-button" value="Find!">
             </form>
+          </div>
+          </section>
 
 
     <p id="location"></p>
-    <div id="map"></div>
+    <div id="map" class="hidden"></div>
     <ul id="events"></ul>
     <div id="js-error"></div>
+    
     <script src="script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaxsSAwL7SBEmyQpqdFT3-I0SAmku9VMA&callback=initMap"
     async defer></script>

@@ -35,9 +35,10 @@ function showPosition(position) {
 }
 
 function showEvents(json) {
-    if(json.page.totalElements == 0) throw $("#js-error").append("No results found, please try a different search.");
+    if(json.page.totalElements == 0) throw $("#js-error").append("<h3>No results found, please try a different search.</h3>");
     for(let i=0; i<json._embedded.events.length; i++) {
-      $("#events").append("<li><a href='" + json._embedded.events[i].url + "' target='_blank'>" + json._embedded.events[i].name+"</a></li>");
+        // $("#events").append("<br>");
+        $("#events").append("<li><a href='" + json._embedded.events[i].url + "' target='_blank'>" + json._embedded.events[i].name+"</a></li>");
     }    
 }
   
@@ -90,8 +91,13 @@ function sendInfo(event) {
     $("#events").empty();
     $("#js-error").empty();
     $("#next-button-holder").empty();
+    $(".hidden").show();
     
     initMap();
+
+    $("html, body").animate({
+        scrollTop: $("#map").offset().top
+    });
    
     event.preventDefault();
     console.log('event sent info');

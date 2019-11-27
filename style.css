@@ -4,14 +4,123 @@
 
   body {
     font-family: 'Nunito', sans-serif;
+    background-color: rebeccapurple;
+    margin: 0px;
+    color: black;
+    
   }
 
   .hidden {
       display: none;
   }
 
+  header, #description, h2, #js-error {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+ }
+
+ .js-form {
+   align-content: center;
+   text-align: center;
+   font-size: 150%;
+ }
+
+ #js-error {
+   background-color: turquoise;
+ }
+
+ul { 
+  display:table; 
+  margin:0 auto;
+  line-height: 250%;
+  font-size: 150%;
+  background-color: turquoise;
+  margin-top: 25px;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+}
+
+header {
+  font-size: 400%;
+  color: rebeccapurple;
+}
+
+h2 {
+  font-size: 300%;
+}
+
+h3 {
+  font-size: 200%;
+}
+
+p {
+  font-size: 150%;
+}
+
+#submit-button {
+  color: black;
+  background-color: whitesmoke;
+  border: 1.5px;
+  font-size: 100%;
+  border-radius: 0%;
+  cursor: pointer;
+  width: 50%;
+  font-size: 150%;
+  
+}
+
+#submit-button:hover {
+  background-color: turquoise;
+  color: rebeccapurple;
+}
+
+#upper-page {
+  background: url(images/people-at-concert-1105666.jpg);
+  background-size: cover;                     
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.layer {
+  background-color: rgba(248, 247, 216, 0.6);
+}
+
+input {
+  width: 50%;
+  font-size: 150%;
+  text-align: center;
+}
+
+li {
+  color: rebeccapurple;
+}
+
+@media screen and (min-width: 1000px) {
+  #map, #events {
+    justify-content: space-between;
+    }
+
   #map {
     width: 500px;
     height: 400px;
+    display: none;
+    position: fixed;
+    float: left;
+    margin-left: 10px;
+  }
+
+  #events {
+    width: 45%;
+    float: right;
+    margin-right: 10px;
+    display: block;
   }
   
+  ul {
+    margin-top: 0;
+  }
+}
