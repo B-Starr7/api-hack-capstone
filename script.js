@@ -98,6 +98,17 @@ function sendInfo(event) {
     $("html, body").animate({
         scrollTop: $("#map").offset().top
     });
+
+    $(document).ready(function () { 
+        let top = $('#map').offset().top - parseFloat($('#map').css('marginTop').replace(/auto/, 0));
+        $(window).scroll(function (event) {
+            let y = $(this).scrollTop();
+            if (y >= top) {
+               var difference = y - top;
+               $('#map').css("top",difference);
+           }
+       });
+    });
    
     event.preventDefault();
     console.log('event sent info');

@@ -104,14 +104,17 @@ li {
     justify-content: space-between;
     }
 
-  #map {
+  /* #map {
     width: 500px;
     height: 400px;
     display: none;
     position: fixed;
     float: left;
     margin-left: 10px;
-  }
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+  } */
 
   #events {
     width: 45%;
@@ -123,4 +126,25 @@ li {
   ul {
     margin-top: 0;
   }
+
+  #map {
+    width: 500px;
+    /* height: 400px; */
+    display: none;
+    position: fixed;
+    float: left;
+    top: 0;
+    margin-left: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    overscroll-behavior-y: auto contain;
+  }
+
+
+  html {
+    scroll-behavior: smooth;
+    /* overscroll-behavior-y: auto contain; */
+  }
+  
 }
