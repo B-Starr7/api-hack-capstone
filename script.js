@@ -99,17 +99,6 @@ function sendInfo(event) {
         scrollTop: $("#map").offset().top
     });
 
-    $(document).ready(function () { 
-        let top = $('#map').offset().top - parseFloat($('#map').css('marginTop').replace(/auto/, 0));
-        $(window).scroll(function (event) {
-            let y = $(this).scrollTop();
-            if (y >= top) {
-               var difference = y - top;
-               $('#map').css("top",difference);
-           }
-       });
-    });
-   
     event.preventDefault();
     console.log('event sent info');
     let searchText = $('#js-event').val();
@@ -145,3 +134,4 @@ function initializeEvents() {
 }
 
 $(initializeEvents);
+
