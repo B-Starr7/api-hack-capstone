@@ -8,6 +8,8 @@ The app displays both a list of ticket links for up to 20 events in the area in 
 I built this applicaiton using a combination of HTML, CSS, JavaScript, and jQuery.
 
 ## Live App
-[https://b-starr7.github.io/api-hack-capstone/]
+https://b-starr7.github.io/api-hack-capstone/
 
 ## Screenshots
+Form:
+![App Form](file:///Users/benstarr/Desktop/Event-Finder-Form.png)
