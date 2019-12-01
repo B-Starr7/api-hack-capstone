@@ -34,10 +34,10 @@ function showPosition(position) {
     });
 }
 
+//Displays events found in a list.
 function showEvents(json) {
     if(json.page.totalElements == 0) throw $("#js-error").append("<h3>No results found, please try a different search.</h3>");
     for(let i=0; i<json._embedded.events.length; i++) {
-        // $("#events").append("<br>");
         $("#events").append("<li><a href='" + json._embedded.events[i].url + "' target='_blank'>" + json._embedded.events[i].name+"</a></li>");
     }    
 }
@@ -54,6 +54,7 @@ function initMap(position, json) {
     bounds = new google.maps.LatLngBounds();
 }
 
+//Adds Map Markers for each event found to the map.
 function addMarker(map, event) {
     let marker = new google.maps.Marker({
         position: new google.maps.LatLng(event._embedded.venues[0].location.latitude, event._embedded.venues[0].location.longitude),
@@ -87,6 +88,7 @@ function addMarker(map, event) {
     });    
 }
 
+//Sends user info from the form to the API's.
 function sendInfo(event) {
     $("#events").empty();
     $("#js-error").empty();
