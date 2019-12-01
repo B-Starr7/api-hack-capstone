@@ -12,4 +12,10 @@ https://b-starr7.github.io/api-hack-capstone/
 
 ## Screenshots
 Form:
-![App-Form](https://user-images.githubusercontent.com/54727677/69907885-30ea4080-1393-11ea-99d6-6aa19ff638ca.png)
+![App Form](https://user-images.githubusercontent.com/54727677/69907885-30ea4080-1393-11ea-99d6-6aa19ff638ca.png)
+
+Mobile/Tablet Results:
+![Mobile/Tablet Results](https://user-images.githubusercontent.com/54727677/69907897-6bec7400-1393-11ea-92d8-be9bd3da431e.png)
+
+Desktop Results:
+![Desktop Results](https://user-images.githubusercontent.com/54727677/69907903-9b02e580-1393-11ea-8982-dba0ff48fed6.png)
