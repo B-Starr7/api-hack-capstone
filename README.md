@@ -1,4 +1,4 @@
-# Event-Finder.IO
+# Event-Finder
 This is my asynchronous API web application, which combines the API's of Google Maps and Ticketmaster. The user is able to enter a city and an event they would like to see such as a musical artist or genre, or for comedy shows, etc. 
 
 ## Summary
